@@ -70,6 +70,7 @@ Application.$controller("liveform5Controller", ["$scope",
 <script id="Admin.variables.json">
 var _AdminPage_Variables_ ={
 	"EshoppingProductorderData": {
+		"name": "EshoppingProductorderData",
 		"type": "Productorder",
 		"isList": true,
 		"owner": "Page",
@@ -91,7 +92,6 @@ var _AdminPage_Variables_ ={
 		"matchMode": "start",
 		"category": "wm.LiveVariable",
 		"_id": "wm-wm.LiveVariable1409045358199",
-		"name": "EshoppingProductorderData",
 		"package": "com.eshopping.Productorder",
 		"tableName": "PRODUCTORDER",
 		"properties": [
@@ -111,6 +111,7 @@ var _AdminPage_Variables_ ={
 				{
 					"fieldName": "id",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
 					"columnName": "ID",
 					"isPrimaryKey": true,
@@ -118,11 +119,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": "identity",
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "status",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "STATUS",
 					"isPrimaryKey": false,
@@ -130,25 +133,29 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
-					"fieldName": "user",
+					"fieldName": "userId",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
-					"columnName": "user_id",
+					"columnName": "USER_ID",
 					"isPrimaryKey": false,
 					"notNull": true,
 					"length": 255,
 					"precision": 19,
 					"generator": null,
 					"isRelated": true,
+					"defaultValue": null,
 					"relatedTableName": "USER",
 					"relatedEntityName": "User",
 					"columns": [
 						{
 							"fieldName": "id",
 							"type": "integer",
+							"hibernateType": null,
 							"fullyQualifiedType": "integer",
 							"columnName": "ID",
 							"isPrimaryKey": true,
@@ -156,11 +163,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": "identity",
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "landmark",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "LANDMARK",
 							"isPrimaryKey": false,
@@ -168,23 +178,29 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "phone",
-							"type": "integer",
-							"fullyQualifiedType": "integer",
+							"type": "string",
+							"hibernateType": null,
+							"fullyQualifiedType": "string",
 							"columnName": "PHONE",
 							"isPrimaryKey": false,
 							"notNull": true,
-							"length": 255,
+							"length": 15,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "pin",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "PIN",
 							"isPrimaryKey": false,
@@ -192,11 +208,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "email",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "EMAIL",
 							"isPrimaryKey": false,
@@ -204,11 +223,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "street",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "STREET",
 							"isPrimaryKey": false,
@@ -216,11 +238,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "name",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "NAME",
 							"isPrimaryKey": false,
@@ -228,23 +253,29 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
-							"fieldName": "product_bought",
+							"fieldName": "productBought",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "PRODUCT_BOUGHT",
 							"isPrimaryKey": false,
-							"notNull": true,
+							"notNull": false,
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "password",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "PASSWORD",
 							"isPrimaryKey": false,
@@ -252,11 +283,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "country",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "COUNTRY",
 							"isPrimaryKey": false,
@@ -264,11 +298,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "city",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "CITY",
 							"isPrimaryKey": false,
@@ -276,16 +313,26 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
-					]
+					],
+					"relatedFieldName": "userId.id",
+					"disableInlineEditing": "true"
 				}
 			],
+			"primaryKeys": [
+				"id"
+			],
 			"entityName": "Productorder",
-			"fullyQualifiedName": "com.eshopping.Productorder"
-		}
+			"fullyQualifiedName": "com.eshopping.Productorder",
+			"tableType": "TABLE"
+		},
+		"tableType": "TABLE"
 	},
 	"EshoppingOrderdetailData": {
+		"name": "EshoppingOrderdetailData",
 		"type": "Orderdetail",
 		"isList": true,
 		"owner": "Page",
@@ -307,7 +354,6 @@ var _AdminPage_Variables_ ={
 		"matchMode": "start",
 		"category": "wm.LiveVariable",
 		"_id": "wm-wm.LiveVariable1409045369888",
-		"name": "EshoppingOrderdetailData",
 		"package": "com.eshopping.Orderdetail",
 		"tableName": "ORDERDETAIL",
 		"properties": [
@@ -335,6 +381,7 @@ var _AdminPage_Variables_ ={
 				{
 					"fieldName": "id",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
 					"columnName": "ID",
 					"isPrimaryKey": true,
@@ -342,25 +389,29 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": "identity",
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
-					"fieldName": "productorder",
+					"fieldName": "orderId",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
-					"columnName": "order_id",
+					"columnName": "ORDER_ID",
 					"isPrimaryKey": false,
 					"notNull": true,
 					"length": 255,
 					"precision": 19,
 					"generator": null,
 					"isRelated": true,
+					"defaultValue": null,
 					"relatedTableName": "PRODUCTORDER",
 					"relatedEntityName": "Productorder",
 					"columns": [
 						{
 							"fieldName": "id",
 							"type": "integer",
+							"hibernateType": null,
 							"fullyQualifiedType": "integer",
 							"columnName": "ID",
 							"isPrimaryKey": true,
@@ -368,11 +419,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": "identity",
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
 							"fieldName": "status",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "STATUS",
 							"isPrimaryKey": false,
@@ -380,11 +434,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
-							"fieldName": "user_id",
+							"fieldName": "userId",
 							"type": "integer",
+							"hibernateType": null,
 							"fullyQualifiedType": "integer",
 							"columnName": "USER_ID",
 							"isPrimaryKey": false,
@@ -392,27 +449,34 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": true
+							"isRelated": true,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
-					]
+					],
+					"relatedFieldName": "orderId.id",
+					"disableInlineEditing": "true"
 				},
 				{
-					"fieldName": "product",
+					"fieldName": "productId",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
-					"columnName": "product_id",
+					"columnName": "PRODUCT_ID",
 					"isPrimaryKey": false,
 					"notNull": true,
 					"length": 255,
 					"precision": 19,
 					"generator": null,
 					"isRelated": true,
+					"defaultValue": null,
 					"relatedTableName": "PRODUCT",
 					"relatedEntityName": "Product",
 					"columns": [
 						{
 							"fieldName": "id",
 							"type": "integer",
+							"hibernateType": null,
 							"fullyQualifiedType": "integer",
 							"columnName": "ID",
 							"isPrimaryKey": true,
@@ -420,23 +484,29 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": "identity",
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"isRelatedPk": "true"
 						},
 						{
-							"fieldName": "img_url",
+							"fieldName": "imgUrl",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "IMG_URL",
 							"isPrimaryKey": false,
-							"notNull": true,
+							"notNull": false,
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "category",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "CATEGORY",
 							"isPrimaryKey": false,
@@ -444,11 +514,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "price",
 							"type": "double",
+							"hibernateType": null,
 							"fullyQualifiedType": "double",
 							"columnName": "PRICE",
 							"isPrimaryKey": false,
@@ -456,11 +529,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 64,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "description",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "DESCRIPTION",
 							"isPrimaryKey": false,
@@ -468,11 +544,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "name",
 							"type": "string",
+							"hibernateType": null,
 							"fullyQualifiedType": "string",
 							"columnName": "NAME",
 							"isPrimaryKey": false,
@@ -480,11 +559,14 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						},
 						{
 							"fieldName": "availability",
 							"type": "boolean",
+							"hibernateType": null,
 							"fullyQualifiedType": "boolean",
 							"columnName": "AVAILABILITY",
 							"isPrimaryKey": false,
@@ -492,13 +574,18 @@ var _AdminPage_Variables_ ={
 							"length": 255,
 							"precision": 19,
 							"generator": null,
-							"isRelated": false
+							"isRelated": false,
+							"defaultValue": null,
+							"disableInlineEditing": "true"
 						}
-					]
+					],
+					"relatedFieldName": "productId.id",
+					"disableInlineEditing": "true"
 				},
 				{
 					"fieldName": "quantity",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
 					"columnName": "QUANTITY",
 					"isPrimaryKey": false,
@@ -506,14 +593,21 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				}
 			],
+			"primaryKeys": [
+				"id"
+			],
 			"entityName": "Orderdetail",
-			"fullyQualifiedName": "com.eshopping.Orderdetail"
-		}
+			"fullyQualifiedName": "com.eshopping.Orderdetail",
+			"tableType": "TABLE"
+		},
+		"tableType": "TABLE"
 	},
 	"EshoppingProductData": {
+		"name": "EshoppingProductData",
 		"type": "Product",
 		"isList": true,
 		"owner": "Page",
@@ -535,7 +629,6 @@ var _AdminPage_Variables_ ={
 		"matchMode": "start",
 		"category": "wm.LiveVariable",
 		"_id": "wm-wm.LiveVariable1409045882522",
-		"name": "EshoppingProductData",
 		"package": "com.eshopping.Product",
 		"tableName": "PRODUCT",
 		"propertiesMap": {
@@ -543,6 +636,7 @@ var _AdminPage_Variables_ ={
 				{
 					"fieldName": "id",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
 					"columnName": "ID",
 					"isPrimaryKey": true,
@@ -550,23 +644,27 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": "identity",
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
-					"fieldName": "img_url",
+					"fieldName": "imgUrl",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "IMG_URL",
 					"isPrimaryKey": false,
-					"notNull": true,
+					"notNull": false,
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "category",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "CATEGORY",
 					"isPrimaryKey": false,
@@ -574,11 +672,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "price",
 					"type": "double",
+					"hibernateType": null,
 					"fullyQualifiedType": "double",
 					"columnName": "PRICE",
 					"isPrimaryKey": false,
@@ -586,11 +686,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 64,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "description",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "DESCRIPTION",
 					"isPrimaryKey": false,
@@ -598,11 +700,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "name",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "NAME",
 					"isPrimaryKey": false,
@@ -610,11 +714,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "availability",
 					"type": "boolean",
+					"hibernateType": null,
 					"fullyQualifiedType": "boolean",
 					"columnName": "AVAILABILITY",
 					"isPrimaryKey": false,
@@ -622,14 +728,21 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				}
 			],
+			"primaryKeys": [
+				"id"
+			],
 			"entityName": "Product",
-			"fullyQualifiedName": "com.eshopping.Product"
-		}
+			"fullyQualifiedName": "com.eshopping.Product",
+			"tableType": "TABLE"
+		},
+		"tableType": "TABLE"
 	},
 	"EshoppingUserData": {
+		"name": "EshoppingUserData",
 		"type": "User",
 		"isList": true,
 		"owner": "Page",
@@ -651,7 +764,6 @@ var _AdminPage_Variables_ ={
 		"matchMode": "start",
 		"category": "wm.LiveVariable",
 		"_id": "wm-wm.LiveVariable1409045938722",
-		"name": "EshoppingUserData",
 		"package": "com.eshopping.User",
 		"tableName": "USER",
 		"propertiesMap": {
@@ -659,6 +771,7 @@ var _AdminPage_Variables_ ={
 				{
 					"fieldName": "id",
 					"type": "integer",
+					"hibernateType": null,
 					"fullyQualifiedType": "integer",
 					"columnName": "ID",
 					"isPrimaryKey": true,
@@ -666,11 +779,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": "identity",
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "landmark",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "LANDMARK",
 					"isPrimaryKey": false,
@@ -678,23 +793,27 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "phone",
-					"type": "integer",
-					"fullyQualifiedType": "integer",
+					"type": "string",
+					"hibernateType": null,
+					"fullyQualifiedType": "string",
 					"columnName": "PHONE",
 					"isPrimaryKey": false,
 					"notNull": true,
-					"length": 255,
+					"length": 15,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "pin",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "PIN",
 					"isPrimaryKey": false,
@@ -702,11 +821,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "email",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "EMAIL",
 					"isPrimaryKey": false,
@@ -714,11 +835,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "street",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "STREET",
 					"isPrimaryKey": false,
@@ -726,11 +849,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "name",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "NAME",
 					"isPrimaryKey": false,
@@ -738,23 +863,27 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
-					"fieldName": "product_bought",
+					"fieldName": "productBought",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "PRODUCT_BOUGHT",
 					"isPrimaryKey": false,
-					"notNull": true,
+					"notNull": false,
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "password",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "PASSWORD",
 					"isPrimaryKey": false,
@@ -762,11 +891,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "country",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "COUNTRY",
 					"isPrimaryKey": false,
@@ -774,11 +905,13 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				},
 				{
 					"fieldName": "city",
 					"type": "string",
+					"hibernateType": null,
 					"fullyQualifiedType": "string",
 					"columnName": "CITY",
 					"isPrimaryKey": false,
@@ -786,12 +919,18 @@ var _AdminPage_Variables_ ={
 					"length": 255,
 					"precision": 19,
 					"generator": null,
-					"isRelated": false
+					"isRelated": false,
+					"defaultValue": null
 				}
 			],
+			"primaryKeys": [
+				"id"
+			],
 			"entityName": "User",
-			"fullyQualifiedName": "com.eshopping.User"
-		}
+			"fullyQualifiedName": "com.eshopping.User",
+			"tableType": "TABLE"
+		},
+		"tableType": "TABLE"
 	}
 }
 </script>
