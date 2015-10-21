@@ -1691,8 +1691,7 @@
 							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null,
-							"isRelatedPk": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "landmark",
@@ -1706,8 +1705,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "phone",
@@ -1721,8 +1719,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "pin",
@@ -1736,8 +1733,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "email",
@@ -1751,8 +1747,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "street",
@@ -1766,8 +1761,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "name",
@@ -1781,8 +1775,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "productBought",
@@ -1796,8 +1789,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "password",
@@ -1811,8 +1803,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "country",
@@ -1826,8 +1817,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "city",
@@ -1841,12 +1831,10 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						}
 					],
-					"relatedFieldName": "userId.id",
-					"disableInlineEditing": "true"
+					"relatedFieldName": "userId.id"
 				}
 			],
 			"primaryKeys": [
@@ -1947,8 +1935,7 @@
 							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null,
-							"isRelatedPk": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "status",
@@ -1962,8 +1949,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "userId",
@@ -1977,12 +1963,10 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": true,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						}
 					],
-					"relatedFieldName": "orderId.id",
-					"disableInlineEditing": "true"
+					"relatedFieldName": "orderId.id"
 				},
 				{
 					"fieldName": "productId",
@@ -2012,8 +1996,7 @@
 							"precision": 19,
 							"generator": "identity",
 							"isRelated": false,
-							"defaultValue": null,
-							"isRelatedPk": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "imgUrl",
@@ -2027,8 +2010,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "category",
@@ -2042,8 +2024,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "price",
@@ -2057,8 +2038,7 @@
 							"precision": 64,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "description",
@@ -2072,8 +2052,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "name",
@@ -2087,8 +2066,7 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						},
 						{
 							"fieldName": "availability",
@@ -2102,12 +2080,10 @@
 							"precision": 19,
 							"generator": null,
 							"isRelated": false,
-							"defaultValue": null,
-							"disableInlineEditing": "true"
+							"defaultValue": null
 						}
 					],
-					"relatedFieldName": "productId.id",
-					"disableInlineEditing": "true"
+					"relatedFieldName": "productId.id"
 				},
 				{
 					"fieldName": "quantity",
